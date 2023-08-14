@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title>animation image</title>
+   <!-- css link -->
+   <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+   <div id="main">
+      <div class="navbar">
+         <div class="logo">
+            <h1>Animated </h1>
+         </div>
+         <nav>
+            <ul>
+               <li>Studio</li>
+               <li>Partner</li>
+               <li>Media</li>
+               <li>User</li>
+
+            </ul>
+         </nav>
+      </div>
+
+      <div class="circle-box">
+         <svg width="402" height="402">  
+            <circle cx="201" cy="201" r="200" stroke="grey" stroke-width="1" fill="none" />  
+           </svg>  
+  
+               <svg width="402" height="402">  
+                  <circle cx="201" cy="201" r="200" stroke="#fff" stroke-width="1" fill="none" id="svgCircle" />  
+                 </svg>  
+               <div>
+                  <span id="step-1"></span>
+                  <span id="step-2"></span>
+                  <span id="step-3"></span>
+                  <span id="step-4"></span>
+                  <span id="step-5"></span>
+               </div>
+               <div class="user-box" id="userBox">
+                  <div class="user">
+                     <img src="Image/person-1.jpg">
+                     <h1>Carl peter</h1>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, mollitia.</p>
+                     <div class="social-links">
+                        <img src="Image/facebook.png">
+                        <img src="Image/twitter.png">
+                        <img src="Image/instagram.png">
+                        <img src="Image/linkedin.png">
+                     </div>
+                  </div>
+
+                 
+
+                  <div class="user">
+                     <img src="Image/person-2.jpg">
+                     <h1>Beth Menson</h1>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, mollitia.</p>
+                     <div class="social-links">
+                        <img src="Image/facebook.png">
+                        <img src="Image/twitter.png">
+                        <img src="Image/instagram.png">
+                        <img src="Image/linkedin.png">
+                     </div>
+                  </div>
+
+                  <div class="user">
+                     <img src="Image/person-3.jpg">
+                     <h1>Carla brown</h1>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, mollitia.</p>
+                     <div class="social-links">
+                        <img src="Image/facebook.png">
+                        <img src="Image/twitter.png">
+                        <img src="Image/instagram.png">
+                        <img src="Image/linkedin.png">
+                     </div>
+                  </div>
+
+                  <div class="user">
+                     <img src="Image/person-4.jpg">
+                     <h1>Alisha groom</h1>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, mollitia.</p>
+                     <div class="social-links">
+                        <img src="Image/facebook.png">
+                        <img src="Image/twitter.png">
+                        <img src="Image/instagram.png">
+                        <img src="Image/linkedin.png">
+                     </div>
+                  </div>
+
+                  <div class="user">
+                     <img src="Image/person-5.jpg">
+                     <h1>Tom ruths</h1>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, mollitia.</p>
+                     <div class="social-links">
+                        <img src="Image/facebook.png">
+                        <img src="Image/twitter.png">
+                        <img src="Image/instagram.png">
+                        <img src="Image/linkedin.png">
+                     </div>
+                  </div>
+               </div>
+            
+   </div>
+</div>
+
+
+   <script>
+      var svgCircle = document.getElementById("svgCircle");
+      var step1 = document.getElementById("step-1");
+      var step2 = document.getElementById("step-2");
+      var step3 = document.getElementById("step-3");
+      var step4 = document.getElementById("step-4");
+      var step5 = document.getElementById("step-5");
+      var main = document.getElementById("main");
+      var userBox = document.getElementById("userBox");
+
+      main.style.backgroundImage = "url(Image/img-1.jpg)";
+
+      step1.addEventListener('click', ( ) =>{
+         svgCircle.style.strokeDashoffset = "1004";
+         main.style.backgroundImage = "  url(Image/img-2.jpg)";
+         userBox.style.top = "-350px";
+      } )
+
+      step2.addEventListener('click', ( ) =>{
+         svgCircle.style.strokeDashoffset = "753";
+         main.style.backgroundImage = "  url(Image/img-3.jpg)";
+         userBox.style.top = "-800px";
+      } )
+
+      step3.addEventListener('click', ( ) =>{
+         svgCircle.style.strokeDashoffset = "502";
+         main.style.backgroundImage = "  url(Image/img-4.jpg)";
+         userBox.style.top = "-1250px";
+      } )
+
+      step4.addEventListener('click', ( ) =>{
+         svgCircle.style.strokeDashoffset = "251";
+         main.style.backgroundImage = "  url(Image/img-5.jpg)";
+         userBox.style.top = "-1700px";
+      } )
+
+      step5.addEventListener('click', ( ) =>{
+         svgCircle.style.strokeDashoffset = "0";
+         main.style.backgroundImage = "  url(Image/img-1.jpg)";
+         userBox.style.top = "100px";
+      } )
+
+      
+   </script>
+</body>
+</html>
